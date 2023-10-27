@@ -1,263 +1,299 @@
 @include('partials.panelHeader')
 
-<!-- ============================================================== -->
-<!-- Start right Content here -->
-<!-- ============================================================== -->
-<div class="main-content">
+                    <div class="pcoded-content">
 
-    <div class="page-content">
-        <div class="container-fluid">
-            <form action="">
-                <!-- start page title -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-0">Add New Post</h4>
-
-                            <div class="page-title-right">
-                                <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Blog</a></li>
-                                    <li class="breadcrumb-item active">Add New Post</li>
-                                </ol>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- end page title -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="justify-content-between d-flex align-items-center mt-4 mb-3">
-                            <h5 class="mb-0 pb-1"></h5>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title mb-0">Headers</h4>
-                            </div>
-                            <div class="card-body">
-
-                                <div class="mb-3 row" style="height: 60px;">
-                                    <label for="example-text-input" class="col-md-2 col-form-label">Title</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                                    </div>
-                                </div> <!-- end Snow-editor-->
-                                <div class="mb-3 row" style="height: 60px;">
-                                    <label for="example-text-input" class="col-md-2 col-form-label">Heading 1</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                                    </div>
-                                </div> <!-- end Snow-editor-->
-                                <div class="mb-3 row" style="height: 60px;">
-                                    <label for="example-text-input" class="col-md-2 col-form-label">Heading 2</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                                    </div>
-                                </div> <!-- end Snow-editor-->
-                                <div class="mb-3 row" style="height: 60px;">
-                                    <label for="example-text-input" class="col-md-2 col-form-label">Heading 3</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                                    </div>
-                                </div> <!-- end Snow-editor-->
-                                <div class="mb-3 row" style="height: 60px;">
-                                    <label for="example-text-input" class="col-md-2 col-form-label">Block Quote</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                                    </div>
-                                </div>
-                                <!-- end Snow-editor-->
-                                <!-- end Snow-editor-->
-                            </div> <!-- end card-body-->
-                        </div><!-- end card-->
-
-                        <!-- end card-->
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="justify-content-between d-flex align-items-center mt-4 mb-3">
-                            <h5 class="mb-0 pb-1"></h5>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title mb-0">Post Body</h4>
-                            </div>
-                            <div class="card-body">
-
-                                <div id="snow-editor" style="height: 300px;">
-                                    <h3><span class="ql-size-large">Hello World!</span></h3>
-                                    <p><br></p>
-                                    <h3>This is an simple editable area.</h3>
-                                    <p><br></p>
-                                    <ul>
-                                        <li>
-                                            Select a text to reveal the toolbar.
-                                        </li>
-                                        <li>
-                                            Edit rich document on-the-fly, so elastic!
-                                        </li>
-                                    </ul>
-                                    <p><br></p>
-                                    <p>
-                                        End of simple area
-                                    </p>
-
-
-                                </div> <!-- end Snow-editor-->
-                            </div> <!-- end card-body-->
-                        </div><!-- end card-->
-
-                        <!-- end card-->
-                    </div><!-- end col -->
-
-
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="justify-content-between d-flex align-items-center mt-4 mb-3">
-                            <h5 class="mb-0 pb-1"></h5>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title mb-0">Image 1</h4>
-                            </div>
-                            <div class="card-body">
-                                <div style="height: 200px;">
-
-                                    <div class="fallback">
-                                        <input name="file" type="file" multiple="multiple">
-                                    </div>
-                                    <div class="dz-message needsclick">
-                                        <div class="mb-3">
-                                            <i class="display-4 text-muted mdi mdi-cloud-upload"></i>
+                        <div class="page-header card">
+                            <div class="row align-items-end">
+                                <div class="col-lg-8">
+                                    <div class="page-header-title">
+                                        <i class="feather icon-tv bg-c-blue"></i>
+                                        <div class="d-inline">
+                                            <h5>Forms Wizard</h5>
+                                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
                                         </div>
-
-                                        <h4>1200 x 800</h4>
                                     </div>
-
                                 </div>
-                            </div> <!-- end card-body-->
-                        </div><!-- end card-->
-
-                        <!-- end card-->
-                    </div><!-- end col -->
-                    <div class="col-lg-3">
-                        <div class="justify-content-between d-flex align-items-center mt-4 mb-3">
-                            <h5 class="mb-0 pb-1"></h5>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title mb-0">Image 2</h4>
+                                <div class="col-lg-4">
+                                    <div class="page-header-breadcrumb">
+                                        <ul class=" breadcrumb breadcrumb-title">
+                                            <li class="breadcrumb-item">
+                                                <a href="../index.html"><i class="feather icon-home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                <a href="#!">Forms Wizard</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <div style="height: 200px;">
-
-                                    <div class="fallback">
-                                        <input name="file" type="file" multiple="multiple">
-                                    </div>
-                                    <div class="dz-message needsclick">
-                                        <div class="mb-3">
-                                            <i class="display-4 text-muted mdi mdi-cloud-upload"></i>
-                                        </div>
-
-                                        <h4> 2000 x 1333</h4>
-                                    </div>
-
-                                </div>
-
-
-                            </div> <!-- end card-body-->
-                        </div><!-- end card-->
-
-                        <!-- end card-->
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="justify-content-between d-flex align-items-center mt-4 mb-3">
-                            <h5 class="mb-0 pb-1"></h5>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title mb-0">Image 3</h4>
-                            </div>
-                            <div class="card-body">
-                                <div style="height: 200px;">
 
-                                    <div class="fallback">
-                                        <input name="file" type="file" multiple="multiple">
-                                    </div>
-                                    <div class="dz-message needsclick">
-                                        <div class="mb-3">
-                                            <i class="display-4 text-muted mdi mdi-cloud-upload"></i>
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+
+                                               
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Verticle Wizard</h5>
+                                                        <span>Add class of <code>.form-control</code> with
+                                                            <code>&lt;input&gt;</code> tag</span>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div id="wizardb">
+                                                                    <section>
+                                                                        <form class="wizard-form"
+                                                                            id="verticle-wizard" action="#">
+                                                                            <h3> Registration </h3>
+                                                                            <fieldset>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="userName-2"
+                                                                                            class="block">User name
+                                                                                            *</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="userName-2b"
+                                                                                            name="userName"
+                                                                                            type="text"
+                                                                                            class=" form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="email-2"
+                                                                                            class="block">Email
+                                                                                            *</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="email-2b"
+                                                                                            name="email"
+                                                                                            type="email"
+                                                                                            class=" form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="password-2"
+                                                                                            class="block">Password
+                                                                                            *</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="password-2b"
+                                                                                            name="password"
+                                                                                            type="password"
+                                                                                            class="form-control ">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="confirm-2"
+                                                                                            class="block">Confirm
+                                                                                            Password *</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="confirm-2b"
+                                                                                            name="confirm"
+                                                                                            type="password"
+                                                                                            class="form-control ">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </fieldset>
+                                                                            <h3> General information </h3>
+                                                                            <fieldset>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="name-2"
+                                                                                            class="block">First name
+                                                                                            *</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="name-2b"
+                                                                                            name="name"
+                                                                                            type="text"
+                                                                                            class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="surname-2"
+                                                                                            class="block">Last name
+                                                                                            *</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="surname-2b"
+                                                                                            name="surname"
+                                                                                            type="text"
+                                                                                            class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="phone-2"
+                                                                                            class="block">Phone
+                                                                                            #</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="phone-2b"
+                                                                                            name="phone"
+                                                                                            type="number"
+                                                                                            class="form-control phone">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="date"
+                                                                                            class="block">Date Of
+                                                                                            Birth</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="dateb"
+                                                                                            name="Date Of Birth"
+                                                                                            type="text"
+                                                                                            class="form-control date-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">Select
+                                                                                        Country</div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <select
+                                                                                            class="form-control required">
+                                                                                            <option>Select State
+                                                                                            </option>
+                                                                                            <option>Gujarat</option>
+                                                                                            <option>Kerala</option>
+                                                                                            <option>Manipur</option>
+                                                                                            <option>Tripura</option>
+                                                                                            <option>Sikkim</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </fieldset>
+                                                                            <h3> Education </h3>
+                                                                            <fieldset>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="University-2"
+                                                                                            class="block">University</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="University-2b"
+                                                                                            name="University"
+                                                                                            type="text"
+                                                                                            class="form-control required">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="Country-2"
+                                                                                            class="block">Country</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="Country-2b"
+                                                                                            name="Country"
+                                                                                            type="text"
+                                                                                            class="form-control required">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="Degreelevel-2"
+                                                                                            class="block">Degree
+                                                                                            level #</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="Degreelevel-2b"
+                                                                                            name="Degree level"
+                                                                                            type="text"
+                                                                                            class="form-control required phone">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="datejoin"
+                                                                                            class="block">Date
+                                                                                            Join</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="datejoinb"
+                                                                                            name="Date Of Birth"
+                                                                                            type="text"
+                                                                                            class="form-control required">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </fieldset>
+                                                                            <h3> Work experience </h3>
+                                                                            <fieldset>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="Company-2"
+                                                                                            class="block">Company:</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="Company-2b"
+                                                                                            name="Company:"
+                                                                                            type="text"
+                                                                                            class="form-control required">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="CountryW-2"
+                                                                                            class="block">Country</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="CountryW-2b"
+                                                                                            name="Country"
+                                                                                            type="text"
+                                                                                            class="form-control required">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <div class="col-sm-12">
+                                                                                        <label for="Position-2"
+                                                                                            class="block">Position</label>
+                                                                                    </div>
+                                                                                    <div class="col-sm-12">
+                                                                                        <input id="Position-2b"
+                                                                                            name="Position"
+                                                                                            type="text"
+                                                                                            class="form-control required">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </fieldset>
+                                                                        </form>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                
+
+                                            </div>
                                         </div>
-
-                                        <h4> 2000 x 1501</h4>
                                     </div>
 
                                 </div>
-
-
-                            </div> <!-- end card-body-->
-                        </div><!-- end card-->
-
-                        <!-- end card-->
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="justify-content-between d-flex align-items-center mt-4 mb-3">
-                            <h5 class="mb-0 pb-1"></h5>
+                            </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title mb-0">Image 4</h4>
-                            </div>
-                            <div class="card-body">
-                                <div style="height: 200px;">
-
-                                    <div class="fallback">
-                                        <input name="file" type="file" multiple="multiple">
-                                    </div>
-                                    <div class="dz-message needsclick">
-                                        <div class="mb-3">
-                                            <i class="display-4 text-muted mdi mdi-cloud-upload"></i>
-                                        </div>
-
-                                        <h4> 2000 x 1333</h4>
-                                    </div>
-
-                                </div>
-
-
-                            </div> <!-- end card-body-->
-                        </div><!-- end card-->
-
-                        <!-- end card-->
                     </div>
-                </div>
-                <div class="mt-4 text-center" >
-                    <button type="submit" class="btn btn-lg btn-primary w-lg">Submit</button>
-                </div>
-            </form>
-        </div> <!-- container-fluid -->
-    </div>
-    <!-- End Page-content -->
 
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> &copy; Symox.
-                </div>
-                <div class="col-sm-6">
-                    <div class="text-sm-end d-none d-sm-block">
-                        Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://themesbrand.com/" target="_blank" class="text-reset">Themesbrand</a>
+                    <div id="styleSelector">
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-</div>
-<!-- end main content-->
+    </div>
 
-@include('partials.panelFooter')
+
+    @include('partials.panelFooter')

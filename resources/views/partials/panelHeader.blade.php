@@ -1,534 +1,397 @@
 
+<html lang="en">
 
 <head>
+    <title>Admindek | Admin Template</title>
 
-    <meta charset="utf-8" />
-    <title>Neon Blog Admin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="{{asset('panel/assets/images/favicon.ico')}}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords"
+        content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="colorlib" />
 
-    <link href="{{asset('assets/libs/fullcalendar/main.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="files/assets/images/favicon.ico" type="image/x-icon">
 
-    <!-- quill css -->
-    <link href="{{asset('panel/assets/libs/quill/quill.core.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('panel/assets/libs/quill/quill.bubble.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('panel/assets/libs/quill/quill.snow.css')}}" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
-    <!-- Bootstrap Css -->
-    <link href="{{asset('panel/assets/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <!-- Icons Css -->
-    <link href="{{asset('panel/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link href="{{asset('panel/assets/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('files/bower_components/bootstrap/css/bootstrap.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('files/assets/pages/waves/css/waves.min.css') }}" type="text/css"
+        media="all">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/icon/feather/css/feather.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/css/font-awesome-n.min.css') }}">
+
+    <link rel="stylesheet" type="text/css"
+        href="{{ asset('files/bower_components/jquery.steps/css/jquery.steps.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('files/bower_components/chartist/css/chartist.css') }}" type="text/css"
+        media="all">
+    <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/css/widget.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/css/pages.css') }}">
+
 
 </head>
 
-<body data-layout="vertical" data-sidebar="dark">
+<body>
 
-    <!-- Begin page -->
-    <div id="layout-wrapper">
+    <div class="loader-bg">
+        <div class="loader-bar"></div>
+    </div>
 
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
 
-        <header id="page-topbar" class="isvertical-topbar">
-            <div class="navbar-header">
-                <div class="d-flex">
-                    <!-- LOGO -->
-                    <div class="navbar-brand-box">
-                        <a href="index.html" class="logo logo-dark">
-                            <span class="logo-sm">
-                                <img src="{{asset('images/logo-light.svg')}}" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="{{asset('images/logo-light.svg')}}" alt="" height="22"> <span class="logo-txt">Symox</span>
-                            </span>
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
+                        <a href="index.html">
+                            <img class="img-fluid" src="files/assets/images/logo.png" alt="Theme-Logo" />
                         </a>
-
-                        <a href="index.html" class="logo logo-light">
-                            <span class="logo-sm">
-                                <img src="{{asset('images/logo-light.svg')}}" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="{{asset('images/logo-light.svg')}}" alt="" height="22"> <span class="logo-txt">Symox</span>
-                            </span>
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="feather icon-menu icon-toggle-right"></i>
                         </a>
-
+                        <a class="mobile-options waves-effect waves-light">
+                            <i class="feather icon-more-horizontal"></i>
+                        </a>
                     </div>
-
-                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item vertical-menu-btn">
-                        <i class="fa fa-fw fa-bars"></i>
-                    </button>
-
-                    <!-- Search -->
-                    <form class="app-search d-none d-lg-block">
-                        <div class="position-relative">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <span class="bx bx-search"></span>
-                        </div>
-                    </form>
-
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li class="header-search">
+                                <div class="main-search morphsearch-search">
+                                    <div class="input-group">
+                                        <span class="input-group-prepend search-close">
+                                            <i class="feather icon-x input-group-text"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Enter Keyword">
+                                        <span class="input-group-append search-btn">
+                                            <i class="feather icon-search input-group-text"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()"
+                                    class="waves-effect waves-light">
+                                    <i class="full-screen feather icon-maximize"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="feather icon-bell"></i>
+                                        <span class="badge bg-c-red">5</span>
+                                    </div>
+                                    <ul class="show-notification notification-view dropdown-menu"
+                                        data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <h6>Notifications</h6>
+                                            <label class="label label-danger">New</label>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="img-radius" src="files/assets/images/avatar-4.jpg"
+                                                    alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">John Doe</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet,
+                                                        consectetuer
+                                                        elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="img-radius" src="files/assets/images/avatar-3.jpg"
+                                                    alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Joseph William</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet,
+                                                        consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="img-radius" src="files/assets/images/avatar-4.jpg"
+                                                    alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Sara Soudein</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet,
+                                                        consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
+                                        <i class="feather icon-message-square"></i>
+                                        <span class="badge bg-c-green">3</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="user-profile header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="files/assets/images/avatar-4.jpg" class="img-radius"
+                                            alt="User-Profile-Image">
+                                        <span>John Doe</span>
+                                        <i class="feather icon-chevron-down"></i>
+                                    </div>
+                                    <ul class="show-notification profile-notification dropdown-menu"
+                                        data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <a href="#!">
+                                                <i class="feather icon-settings"></i> Settings
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="feather icon-user"></i> Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="email-inbox.html">
+                                                <i class="feather icon-mail"></i> My Messages
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="auth-lock-screen.html">
+                                                <i class="feather icon-lock"></i> Lock Screen
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{route('admin/logout')}}">
+                                                <i class="feather icon-log-out"></i> Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="d-flex">
-                    <div class="dropdown d-inline-block d-lg-none">
-                        <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon-sm" data-feather="search"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0">
-                            <form class="p-2">
-                                <div class="search-box">
-                                    <div class="position-relative">
-                                        <input type="text" class="form-control rounded bg-light border-0" placeholder="Search...">
-                                        <i class="mdi mdi-magnify search-icon"></i>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-inline-block language-switch"> 
-                        <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="header-lang-img" src="{{asset('panel/assets/images/flags/us.jpg')}}" alt="Header Language" height="16">
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end">
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="eng">
-                            </a>
-                            <img src="{{asset('panel/assets/images/flags/us.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span>
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
-                                <img src="{{asset('panel/assets/images/flags/spain.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
-                                <img src="{{asset('panel/assets/images/flags/germany.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
-                                <img src="{{asset('panel/assets/images/flags/italy.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
-                                <img src="{{asset('panel/assets/images/flags/russia.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon-sm" data-feather="bell"></i>
-                            <span class="noti-dot bg-danger rounded-pill">3</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
-                            <div class="p-3">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <h5 class="m-0 font-size-15"> Notifications </h5>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href="#!" class="small"> Mark all as read</a>
+            </nav>
+            <div id="sidebar" class="users p-chat-user showChat">
+                <div class="had-container">
+                    <div class="p-fixed users-main">
+                        <div class="user-box">
+                            <div class="chat-search-box">
+                                <a class="back_friendlist">
+                                    <i class="feather icon-x"></i>
+                                </a>
+                                <div class="right-icon-control">
+                                    <div class="input-group input-group-button">
+                                        <input type="text" id="search-friends" name="footer-email"
+                                            class="form-control" placeholder="Search Friend">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary waves-effect waves-light" type="button"><i
+                                                    class="feather icon-search"></i></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div data-simplebar style="max-height: 250px;">
-                                <h6 class="dropdown-header bg-light">New</h6>
-                                <a href="#" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start">
-                                        <div class="flex-shrink-0">
-                                            <img src="{{asset('panel/assets/images/users/avatar-3.jpg')}}" class="me-3 rounded-circle avatar-sm" alt="user-pic">
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1">Justin Verduzco</h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Your task changed an issue from "In Progress" to <span class="badge badge-soft-success">Review</span></p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
-                                            </div>
-                                        </div>
+                            <div class="main-friend-list">
+                                <div class="media userlist-box waves-effect waves-light" data-id="1"
+                                    data-status="online" data-username="Josephin Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius img-radius"
+                                            src="files/assets/images/avatar-3.jpg" alt="Generic placeholder image ">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="chat-header">Josephin Doe</div>
                                     </div>
-                                </a>
-                                <a href="#" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start">
-                                        <div class="flex-shrink-0">
-                                            <div class="avatar-sm me-3">
-                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
-                                                    <i class="bx bx-shopping-bag"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1">New order has been placed</h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Open the order confirmation or shipment confirmation.</p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> 5 hours ago</p>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="media userlist-box waves-effect waves-light" data-id="2"
+                                    data-status="online" data-username="Lary Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius" src="files/assets/images/avatar-2.jpg"
+                                            alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Lary Doe</div>
                                     </div>
-                                </a>
-                                <h6 class="dropdown-header bg-light">Earlier</h6>
-                                <a href="#" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start">
-                                        <div class="flex-shrink-0">
-                                            <div class="avatar-sm me-3">
-                                                <span class="avatar-title bg-soft-success text-success rounded-circle font-size-16">
-                                                    <i class="bx bx-cart"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1">Your item is shipped</h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Here is somthing that you might light like to know.</p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> 1 day ago</p>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="media userlist-box waves-effect waves-light" data-id="3"
+                                    data-status="online" data-username="Alice">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius" src="files/assets/images/avatar-4.jpg"
+                                            alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Alice</div>
                                     </div>
-                                </a>
-
-                                <a href="#" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start">
-                                        <div class="flex-shrink-0">
-                                            <img src="{{asset('panel/assets/images/users/avatar-4.jpg')}}" class="me-3 rounded-circle avatar-sm" alt="user-pic">
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1">Salena Layfield</h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Yay ! Everything worked!</p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> 3 days ago</p>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="media userlist-box waves-effect waves-light" data-id="4"
+                                    data-status="offline" data-username="Alia">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius" src="files/assets/images/avatar-3.jpg"
+                                            alt="Generic placeholder image">
+                                        <div class="live-status bg-default"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Alia<small class="d-block text-muted">10 min
+                                                ago</small></div>
                                     </div>
-                                </a>
+                                </div>
+                                <div class="media userlist-box waves-effect waves-light" data-id="5"
+                                    data-status="offline" data-username="Suzen">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius" src="files/assets/images/avatar-2.jpg"
+                                            alt="Generic placeholder image">
+                                        <div class="live-status bg-default"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Suzen<small class="d-block text-muted">15 min
+                                                ago</small></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="p-2 border-top d-grid">
-                                <a class="btn btn-sm btn-link font-size-14 btn-block text-center" href="javascript:void(0)">
-                                    <i class="uil-arrow-circle-right me-1"></i> <span>View More..</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-none d-sm-inline-block">
-                        <button type="button" class="btn header-item light-dark" id="mode-setting-btn">
-                            <i data-feather="moon" class="icon-sm layout-mode-dark"></i>
-                            <i data-feather="sun" class="icon-sm layout-mode-light"></i>
-                        </button>
-                    </div>
-
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="{{asset('panel/assets/images/users/avatar-1.jpg')}}" alt="Header Avatar">
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end pt-0">
-                            <a class="dropdown-item" href="contacts-profile.html"><i class='bx bx-user-circle text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">My Account</span></a>
-                            <a class="dropdown-item" href="apps-chat.html"><i class='bx bx-chat text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">Chat</span></a>
-                            <a class="dropdown-item" href="pages-faqs.html"><i class='bx bx-buoy text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">Support</span></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center" href="#"><i class='bx bx-cog text-muted font-size-18 align-middle me-1'></i> <span class="align-middle me-3">Settings</span><span class="badge badge-soft-success ms-auto">New</span></a>
-                            <a class="dropdown-item" href="auth-lock-screen.html"><i class='bx bx-lock text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">Lock screen</span></a>
-                            <a class="dropdown-item" href="auth-logout.html"><i class='bx bx-log-out text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">Logout</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
 
-            <!-- LOGO -->
-            <div class="navbar-brand-box">
-                <a href="index.html" class="logo logo-dark">
-                    <span class="logo-sm">
-                        <img src="{{asset('images/logo-light.svg')}}" alt="" height="22">
-                    </span>
-                    <span class="logo-lg">
-                        <img src="{{asset('images/logo-light.svg')}}" alt="" height="22"> <span class="logo-txt"></span>
-                    </span>
-                </a>
-                <br>
-                <a href="index.html" class="logo logo-light">
-                    <span class="logo-lg">
-                        <img src="{{asset('images/logo-light.svg')}}" alt="" height="22"> <span class="logo-txt"></span>
-                    </span>
-                    <span class="logo-sm">
-                        <img src="{{asset('images/logo-light.svg')}}" alt="" height="22">
-                    </span>
-                </a>
-            </div>
 
-            <button type="button" class="btn btn-sm px-3 font-size-16 header-item vertical-menu-btn">
-                <i class="fa fa-fw fa-bars"></i>
-            </button>
-
-            <div data-simplebar class="sidebar-menu-scroll">
-
-                <!--- Sidemenu -->
-                <div id="sidebar-menu">
-                    <!-- Left Menu Start -->
-                    <ul class="metismenu list-unstyled" id="side-menu">
-                        <li class="menu-title" data-key="t-menu">Menu</li>
-
-                        <li>
-                            <a href="{{route('/admin')}}">
-                                <i class="bx bx-tachometer icon nav-icon"></i>
-                                <span class="menu-item" data-key="t-dashboards">Dashboard</span>
-                                <span class="badge rounded-pill bg-success">5+</span>
-                            </a>
-                        </li>
-
-                        <li class="menu-title" data-key="t-applications">Applications</li>
-
-                        <li>
-                            <a href="{{route('admin/calender')}}">
-                                <i class="bx bx-calendar icon nav-icon"></i>
-                                <span class="menu-item" data-key="t-calendar">Calendar</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="{{route('admin/chat')}}">
-                                <i class="bx bx-chat icon nav-icon"></i>
-                                <span class="menu-item" data-key="t-chat">Chat</span>
-                                <span class="badge rounded-pill bg-danger" data-key="t-hot">Hot</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow">
-                                <i class="bx bx-envelope icon nav-icon"></i>
-                                <span class="menu-item" data-key="t-email">Email</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="inbox" data-key="t-inbox">Inbox</a></li>
-                                <li><a href="{{route('admin/readEmail')}}" data-key="t-read-email">Read Email</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow">
-                                <i class="bx bx-store icon nav-icon"></i>
-                                <span class="menu-item" data-key="t-ecommerce">Blog</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="{{route('admin/posts')}}" data-key="t-products">Posts</a></li>
-                                <li><a href="{{route('admin/newpost')}}" data-key="t-products">Add New Posts</a></li>
-                                <li><a href="{{route('admin/comments')}}" data-key="t-product-detail">Comments</a></li>
-                                <li><a href="{{route('admin/categories')}}" data-key="t-orders">Categories</a></li>
-                                <li><a href="{{route('admin/authors')}}" data-key="t-add-product">Authors</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow">
-                                <i class="bx bxs-user-detail icon nav-icon"></i>
-                                <span class="menu-item" data-key="t-contacts">Admin</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="{{route('admin/profile')}}" data-key="t-user-settings">Profile</a></li>
-                            </ul>
-                        </li>
-
-                    </ul>
+            <div class="showChat_inner">
+                <div class="media chat-inner-header">
+                    <a class="back_chatBox">
+                        <i class="feather icon-x"></i> Josephin Doe
+                    </a>
                 </div>
-                <!-- Sidebar -->
-            </div>
-        </div>
-        <!-- Left Sidebar End -->
-        <header id="page-topbar" class="ishorizontal-topbar">
-            <div class="navbar-header">
-                <div class="d-flex">
-                    <!-- LOGO -->
-                    <div class="navbar-brand-box">
-                        <a href="index.html" class="logo logo-dark">
-                            <span class="logo-sm">
-                                <img src="{{asset('panel/assets/images/logo-sm.svg')}}" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="{{asset('panel/assets/images/logo-sm.svg')}}" alt="" height="22"> <span class="logo-txt">Symox</span>
-                            </span>
+                <div class="main-friend-chat">
+                    <div class="media chat-messages">
+                        <a class="media-left photo-table" href="#!">
+                            <img class="media-object img-radius img-radius m-t-5"
+                                src="files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
                         </a>
-
-                        <a href="index.html" class="logo logo-light">
-                            <span class="logo-sm">
-                                <img src="{{asset('panel/assets/images/logo-sm.svg')}}" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="{{asset('panel/assets/images/logo-sm.svg')}}" alt="" height="22"> <span class="logo-txt">Symox</span>
-                            </span>
+                        <div class="media-body chat-menu-content">
+                            <div class>
+                                <p class="chat-cont">I'm just looking around. Will you tell me something about
+                                    yourself?</p>
+                            </div>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
+                    </div>
+                    <div class="media chat-messages">
+                        <div class="media-body chat-menu-reply">
+                            <div class>
+                                <p class="chat-cont">Ohh! very nice</p>
+                            </div>
+                            <p class="chat-time">8:22 a.m.</p>
+                        </div>
+                    </div>
+                    <div class="media chat-messages">
+                        <a class="media-left photo-table" href="#!">
+                            <img class="media-object img-radius img-radius m-t-5"
+                                src="files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
                         </a>
+                        <div class="media-body chat-menu-content">
+                            <div class>
+                                <p class="chat-cont">can you come with me?</p>
+                            </div>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
                     </div>
-
-                    <button type="button" class="btn btn-sm px-3 font-size-16 d-lg-none header-item" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
-                        <i class="fa fa-fw fa-bars"></i>
-                    </button>
-
                 </div>
-
-                <div class="d-flex">
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon-sm" data-feather="search"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0">
-                            <form class="p-3">
-                                <div class="search-box">
-                                    <div class="position-relative">
-                                        <input type="text" class="form-control rounded" placeholder="Search here...">
-                                        <i class="mdi mdi-magnify search-icon"></i>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="dropdown d-inline-block language-switch">
-                        <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="header-lang-img" src="{{asset('panel/assets/images/flags/us.jpg')}}" alt="Header Language" height="16">
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end">
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="eng">
-                                <img src="{{asset('panel/assets/images/flags/us.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span>
-                            </a>
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
-                                <img src="{{asset('panel/assets/images/flags/spain.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
-                                <img src="{{asset('panel/assets/images/flags/germany.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
-                                <img src="{{asset('panel/assets/images/flags/italy.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
-                                <img src="{{asset('panel/assets/images/flags/russia.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon-sm" data-feather="bell"></i>
-                            <span class="noti-dot bg-danger rounded-pill">3</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
-                            <div class="p-3">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <h5 class="m-0 font-size-15"> Notifications </h5>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href="javascript:void(0);" class="small"> Mark all as read</a>
-                                    </div>
-                                </div>
+                <div class="chat-reply-box">
+                    <div class="right-icon-control">
+                        <div class="input-group input-group-button">
+                            <input type="text" class="form-control" placeholder="Write hear . . ">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary waves-effect waves-light" type="button"><i
+                                        class="feather icon-message-circle"></i></button>
                             </div>
-                            <div data-simplebar style="max-height: 250px;">
-                                <a href="#" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start bg-light">
-                                        <div class="flex-shrink-0">
-                                            <img src="{{asset('panel/assets/images/users/avatar-3.jpg')}}" class="me-3 rounded-circle avatar-sm" alt="user-pic">
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1">Justin Verduzco</h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Your task changed an issue from "In Progress" to <span class="badge badge-soft-success">Review</span></p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start">
-                                        <div class="flex-shrink-0">
-                                            <div class="avatar-sm me-3">
-                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
-                                                    <i class="bx bx-shopping-bag"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1">New order has been placed</h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Open the order confirmation or shipment confirmation.</p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> 5 hours ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start">
-                                        <div class="flex-shrink-0">
-                                            <div class="avatar-sm me-3">
-                                                <span class="avatar-title bg-soft-success text-success rounded-circle font-size-16">
-                                                    <i class="bx bx-cart"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1">Your item is shipped</h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Here is somthing that you might light like to know.</p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> 1 day ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="text-reset notification-item">
-                                    <div class="d-flex border-bottom align-items-start">
-                                        <div class="flex-shrink-0">
-                                            <img src="{{asset('panel/assets/images/users/avatar-4.jpg')}}" class="me-3 rounded-circle avatar-sm" alt="user-pic">
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-1">Salena Layfield</h6>
-                                            <div class="text-muted">
-                                                <p class="mb-1 font-size-13">Yay ! Everything worked!</p>
-                                                <p class="mb-0 font-size-10 text-uppercase fw-bold"><i class="mdi mdi-clock-outline"></i> 3 days ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="p-2 border-top d-grid">
-                                <a class="btn btn-sm btn-link font-size-14 btn-block text-decoration-underline fw-bold text-center" href="javascript:void(0)">
-                                    <span>View All <i class='bx bx-right-arrow-alt'></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-none d-sm-inline-block">
-                        <button type="button" class="btn header-item light-dark" id="mode-setting-btn">
-                            <i data-feather="moon" class="icon-sm layout-mode-dark "></i>
-                            <i data-feather="sun" class="icon-sm layout-mode-light"></i>
-                        </button>
-                    </div>
-
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="{{asset('panel/assets/images/users/avatar-1.jpg')}}" alt="Header Avatar">
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end pt-0">
-                            <a class="dropdown-item" href="contacts-profile.html"><i class='bx bx-user-circle text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">My Account</span></a>
-                            <a class="dropdown-item" href="apps-chat.html"><i class='bx bx-chat text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">Chat</span></a>
-                            <a class="dropdown-item" href="pages-faqs.html"><i class='bx bx-buoy text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">Support</span></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item d-flex align-items-center" href="#"><i class='bx bx-cog text-muted font-size-18 align-middle me-1'></i> <span class="align-middle me-3">Settings</span><span class="badge badge-soft-success ms-auto">New</span></a>
-                            <a class="dropdown-item" href="auth-lock-screen.html"><i class='bx bx-lock text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">Lock screen</span></a>
-                            <a class="dropdown-item" href="auth-logout.html"><i class='bx bx-log-out text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">Logout</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+
+                    <nav class="pcoded-navbar">
+                        <div class="nav-list">
+                            <div class="pcoded-inner-navbar main-menu">
+                                <div class="pcoded-navigation-label">Navigation</div>
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu active pcoded-trigger">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                            <span class="pcoded-mtext">Dashboard</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class="active">
+                                                <a href="index.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Posts</span>
+                                                </a>
+                                            </li>
+                                            <li class>
+                                                <a href="default/dashboard-crm.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Categories</span>
+                                                </a>
+                                            </li>
+                                            <li class>
+                                                <a href="default/dashboard-analytics.html"
+                                                    class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Analytics</span>
+                                                    <span class="pcoded-badge label label-info ">NEW</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
+                                            <span class="pcoded-mtext">Blog Management</span>
+                                            <span class="pcoded-badge label label-warning">NEW</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" pcoded-hasmenu">
+                                                <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Manage</span>
+                                                </a>
+                                                <ul class="pcoded-submenu">
+                                                    <li class>
+                                                        <a href="default/menu-static.html"
+                                                            class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Posts</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class>
+                                                        <a href="{{ route('admin/newpost') }}"
+                                                            class="waves-effect waves-dark">
+                                                            <span class="pcoded-mtext">Add New Post</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>

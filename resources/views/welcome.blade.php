@@ -23,206 +23,8 @@
                     </div>
                 </div>
             </div>
-            <div class="site-hero home-intro-two">
-                <div class="container">
-                    <div class="hero-two-column">
-                        <div class="hero-column-left">
-                            <h1 class="intro-title heading-large">
-                                Hello 👋, we are Porto, exploring <span>fashion</span>, <span>lifestyle</span> and
-                                <span>health</span>.
-                            </h1>
-                            <div class="intro-description">
-                                Introducing a modern and sleek theme for Ghost. Perfect for <b>magazine, newsletter,
-                                    professional and personal blog</b> publishing.
-                            </div>
-                            <div class="hero-email-subscription">
-                                <form data-members-form="subscribe" class="flex hero-subscription-form">
-                                    <label for="hero_form_email" class="sr-only">Email</label>
-                                    <input data-members-email id="hero_form_email" class="email" type="email"
-                                        name="email" placeholder="Your email address">
-                                    <button class="btn" type="submit"><span>Subscribe</span></button>
-
-                                </form>
-                                <div class="message-container">
-                                    <div class="notification success form-notification">
-                                        <a class="notification-close" href="javascript:;"
-                                            aria-label="close notification"><span class="close-icon"><svg>
-                                                    <use xlink:href="#i-close"></use>
-                                                </svg></span></a>
-                                        <strong>Great!</strong> Check your inbox and click the link to confirm your
-                                        subscription.
-                                    </div>
-                                    <div class="notification error form-notification">
-                                        <a class="notification-close" href="javascript:;"
-                                            aria-label="close notification"><span class="close-icon"><svg>
-                                                    <use xlink:href="#i-close"></use>
-                                                </svg></span></a>
-                                        <strong>Error!</strong> Please enter a valid email address!
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hero-column-right">
-                            <div class="site-cover-image-wrapper">
-                                <img loading="lazy"
-                                    srcset="https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHwzZCUyMHJlbmRlcnxlbnwwfHx8fDE2OTI0NTE5NDl8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 300w,
-                            https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHwzZCUyMHJlbmRlcnxlbnwwfHx8fDE2OTI0NTE5NDl8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w,
-                            https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHwzZCUyMHJlbmRlcnxlbnwwfHx8fDE2OTI0NTE5NDl8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1200w,
-                            https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHwzZCUyMHJlbmRlcnxlbnwwfHx8fDE2OTI0NTE5NDl8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1400w"
-                                    sizes="(max-width: 349px) 300px, (max-width: 767px) 600px, (min-width: 768px) 1200px, (min-width: 1290px) 1400px, 1400px"
-                                    src="https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHwzZCUyMHJlbmRlcnxlbnwwfHx8fDE2OTI0NTE5NDl8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                    alt=" cover">
-                            </div>
-                            <div class="total-member-card flex align-center">
-                                <div class="total-member">
-                                    60+
-                                </div>
-                                <div class="member-subtext">
-                                    Readers who joined the community
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="featured-posts three-column">
-                <div class="container">
-                    <div>
-                        <h2 class="section-title">Featured posts</h2>
-                    </div>
-                    <div class="featured-posts-wrap">
-                        <article class="post-card js-card flex ar-4:3">
-                            <a href="never-let-your-memories-be-greater-than-your-dreams/index.html"
-                                class="post-img-wrap">
-                                <img loading="lazy"
-                                    srcset="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                    sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                    src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                    alt="Never let your memories be greater than your dreams">
-                            </a>
-                            <div class="post-info-wrap">
-                                <div class="tag-list flex">
-                                    <a href="tag/travel/index.html" style="--tag-color:#E10689">Travel</a>
-                                </div>
-                                <h2 class="h4 post-title">
-                                    <a href="never-let-your-memories-be-greater-than-your-dreams/index.html">Never let
-                                        your memories be greater than your dreams</a>
-                                </h2>
-                                <div class="post-excerpt">
-                                    Before long the searchlight discovered some distance away a schooner with all sails
-                                    set, apparently the same vessel which had been noticed earlier in the evening. The
-                                    wind had by this time backed to the east, and there was a shudder amongst the
-                                    watchers on
-                                </div>
-                                <div class="post-meta text-s flex">
-                                    <div class="author-avatars flex" data-authors="2">
-                                        <a href="author/apurba/index.html" class="author-image-wrap">
-                                            <img src="content/images/2023/08/Apurba.jpg" alt="Apurba Talukdar">
-                                        </a>
-                                        <a href="author/ishan/index.html" class="author-image-wrap">
-                                            <img src="content/images/2023/08/ishan.jpg" alt="Ishan Sharma">
-                                        </a>
-                                    </div>
-                                    <span class="read-time">
-                                        <svg>
-                                            <use xlink:href="#i-clock"></use>
-                                        </svg>3 min read
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="post-card js-card flex ar-4:3">
-                            <a href="self-observation-is-the-first-step-of-inner-unfolding/index.html"
-                                class="post-img-wrap">
-                                <img loading="lazy"
-                                    srcset="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                    sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                    src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                    alt="Self-observation is the first step of inner unfolding">
-                            </a>
-                            <div class="post-info-wrap">
-                                <div class="tag-list flex">
-                                    <a href="tag/lifestyle/index.html" style="--tag-color:#4d61ff">Lifestyle</a>
-                                </div>
-                                <h2 class="h4 post-title">
-                                    <a href="self-observation-is-the-first-step-of-inner-unfolding/index.html">Self-observation
-                                        is the first step of inner unfolding</a>
-                                </h2>
-                                <div class="post-excerpt">
-                                    Mr. Branghton's house is small and inconvenient; though his shop, which takes in all
-                                    the ground floor, is large and commodious. I believe I told you before, that he is a
-                                    silver-smith.
-                                </div>
-                                <div class="post-meta text-s flex">
-                                    <div class="author-avatars flex" data-authors="1">
-                                        <a href="author/biswajit/index.html" class="author-image-wrap">
-                                            <img src="https://www.gravatar.com/avatar/021e64775176cc4c7018e5e867f17de2?s=250&amp;r=x&amp;d=mp"
-                                                alt="Biswajit Saha">
-                                        </a>
-                                    </div>
-                                    <span class="read-time">
-                                        <svg>
-                                            <use xlink:href="#i-clock"></use>
-                                        </svg>4 min read
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="post-card js-card flex ar-4:3">
-                            <a href="the-mind-and-body-are-not-separate-what-affects-one-affects-the-other/index.html"
-                                class="post-img-wrap">
-                                <img loading="lazy"
-                                    srcset="https://images.unsplash.com/photo-1593164842264-854604db2260?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1593164842264-854604db2260?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1593164842264-854604db2260?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1593164842264-854604db2260?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                    sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                    src="https://images.unsplash.com/photo-1593164842264-854604db2260?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                    alt="The mind and body are not separate. what affects one, affects the other">
-                            </a>
-                            <div class="post-info-wrap">
-                                <div class="tag-list flex">
-                                    <span class="post-visibility" data-tooltip="paid">
-                                        <svg>
-                                            <use xlink:href="#i-lock"></use>
-                                        </svg>
-                                    </span>
-                                    <a href="tag/health/index.html" style="--tag-color:#1dbf2f">Health</a>
-                                </div>
-                                <h2 class="h4 post-title">
-                                    <a
-                                        href="the-mind-and-body-are-not-separate-what-affects-one-affects-the-other/index.html">The
-                                        mind and body are not separate. what affects one, affects the other</a>
-                                </h2>
-                                <div class="post-excerpt">
-                                    His recital put the Captain into an ecstasy; he went from the lady to the gentleman,
-                                    and from the gentleman to the lady, to enjoy alternately the sight of their
-                                    distress. He really shouted with pleasure; and, shaking Monsieur Du Bois strenuously
-                                    by the hand
-                                </div>
-                                <div class="post-meta text-s flex">
-                                    <div class="author-avatars flex" data-authors="1">
-                                        <a href="author/harini/index.html" class="author-image-wrap">
-                                            <img src="content/images/2023/08/harini.jpg" alt="Harini Banerjee">
-                                        </a>
-                                    </div>
-                                    <span class="read-time">
-                                        <svg>
-                                            <use xlink:href="#i-clock"></use>
-                                        </svg>3 min read
-                                    </span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        
+            
             <div class="featured-posts two-column">
                 <div class="container">
                     <div>
@@ -231,7 +33,7 @@
                     <div class="row">
                         <div class="col-lg-7 post-large-wrap">
                             <article class="post-card js-card flex post-card-large">
-                                <a href="never-let-your-memories-be-greater-than-your-dreams/index.html"
+                                <a href="{{route('singlepost')}}"
                                     class="post-img-wrap">
                                     <img loading="lazy"
                                         srcset="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
@@ -247,7 +49,7 @@
                                         <a href="tag/travel/index.html" style="--tag-color:#E10689">Travel</a>
                                     </div>
                                     <h2 class="h4 post-title">
-                                        <a href="never-let-your-memories-be-greater-than-your-dreams/index.html">Never
+                                        <a href="{{route('singlepost')}}">Never
                                             let your memories be greater than your dreams</a>
                                     </h2>
                                     <div class="post-excerpt">
@@ -378,209 +180,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container featured-posts coverflow-slider">
-                <div>
-                    <h2 class="section-title">Featured posts</h2>
-                </div>
-                <div class="featured-post-slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="post-card-coverflow">
-                                <a href="never-let-your-memories-be-greater-than-your-dreams/index.html"
-                                    class="post-img-wrap">
-                                    <img loading="lazy"
-                                        srcset="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                        sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                        src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                        alt="Never let your memories be greater than your dreams">
-                                </a>
-                                <div class="post-info-wrap">
-                                    <div class="tag-list flex">
-                                        <a href="tag/travel/index.html" style="--tag-color:#E10689">Travel</a>
-                                    </div>
-                                    <h2 class="h4 post-title">
-                                        <a href="never-let-your-memories-be-greater-than-your-dreams/index.html">Never
-                                            let your memories be greater than your dreams</a>
-                                    </h2>
-                                    <div class="post-meta text-s flex">
-                                        <div class="author-avatars flex" data-authors="2">
-                                            <a href="author/apurba/index.html" class="author-image-wrap">
-                                                <img src="content/images/2023/08/Apurba.jpg" alt="Apurba Talukdar">
-                                            </a>
-                                            <a href="author/ishan/index.html" class="author-image-wrap">
-                                                <img src="content/images/2023/08/ishan.jpg" alt="Ishan Sharma">
-                                            </a>
-                                        </div>
-                                        <span class="read-time">
-                                            <svg>
-                                                <use xlink:href="#i-clock"></use>
-                                            </svg>3 min read
-                                        </span>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="post-card-coverflow">
-                                <a href="self-observation-is-the-first-step-of-inner-unfolding/index.html"
-                                    class="post-img-wrap">
-                                    <img loading="lazy"
-                                        srcset="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                        sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                        src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                        alt="Self-observation is the first step of inner unfolding">
-                                </a>
-                                <div class="post-info-wrap">
-                                    <div class="tag-list flex">
-                                        <a href="tag/lifestyle/index.html" style="--tag-color:#4d61ff">Lifestyle</a>
-                                    </div>
-                                    <h2 class="h4 post-title">
-                                        <a href="self-observation-is-the-first-step-of-inner-unfolding/index.html">Self-observation
-                                            is the first step of inner unfolding</a>
-                                    </h2>
-                                    <div class="post-meta text-s flex">
-                                        <div class="author-avatars flex" data-authors="1">
-                                            <a href="author/biswajit/index.html" class="author-image-wrap">
-                                                <img src="https://www.gravatar.com/avatar/021e64775176cc4c7018e5e867f17de2?s=250&amp;r=x&amp;d=mp"
-                                                    alt="Biswajit Saha">
-                                            </a>
-                                        </div>
-                                        <span class="read-time">
-                                            <svg>
-                                                <use xlink:href="#i-clock"></use>
-                                            </svg>4 min read
-                                        </span>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="post-card-coverflow">
-                                <a href="the-mind-and-body-are-not-separate-what-affects-one-affects-the-other/index.html"
-                                    class="post-img-wrap">
-                                    <img loading="lazy"
-                                        srcset="https://images.unsplash.com/photo-1593164842264-854604db2260?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1593164842264-854604db2260?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1593164842264-854604db2260?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1593164842264-854604db2260?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                        sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                        src="https://images.unsplash.com/photo-1593164842264-854604db2260?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDl8fHlvZ2F8ZW58MHx8fHwxNjcxNDMxNTUx&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                        alt="The mind and body are not separate. what affects one, affects the other">
-                                </a>
-                                <div class="post-info-wrap">
-                                    <div class="tag-list flex">
-                                        <span class="post-visibility" data-tooltip="paid">
-                                            <svg>
-                                                <use xlink:href="#i-lock"></use>
-                                            </svg>
-                                        </span>
-                                        <a href="tag/health/index.html" style="--tag-color:#1dbf2f">Health</a>
-                                    </div>
-                                    <h2 class="h4 post-title">
-                                        <a
-                                            href="the-mind-and-body-are-not-separate-what-affects-one-affects-the-other/index.html">The
-                                            mind and body are not separate. what affects one, affects the other</a>
-                                    </h2>
-                                    <div class="post-meta text-s flex">
-                                        <div class="author-avatars flex" data-authors="1">
-                                            <a href="author/harini/index.html" class="author-image-wrap">
-                                                <img src="content/images/2023/08/harini.jpg" alt="Harini Banerjee">
-                                            </a>
-                                        </div>
-                                        <span class="read-time">
-                                            <svg>
-                                                <use xlink:href="#i-clock"></use>
-                                            </svg>3 min read
-                                        </span>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="post-card-coverflow">
-                                <a href="new-tech-innovation-for-low-cost-ocean-cleanup/index.html"
-                                    class="post-img-wrap">
-                                    <img loading="lazy"
-                                        srcset="https://images.unsplash.com/photo-1522000243595-42c412404679?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fGZhc2hpb24lMjBzZWElMjB0ZWNofGVufDB8fHx8MTY5MjQ0NTg4NHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1522000243595-42c412404679?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fGZhc2hpb24lMjBzZWElMjB0ZWNofGVufDB8fHx8MTY5MjQ0NTg4NHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1522000243595-42c412404679?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fGZhc2hpb24lMjBzZWElMjB0ZWNofGVufDB8fHx8MTY5MjQ0NTg4NHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1522000243595-42c412404679?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fGZhc2hpb24lMjBzZWElMjB0ZWNofGVufDB8fHx8MTY5MjQ0NTg4NHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                        sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                        src="https://images.unsplash.com/photo-1522000243595-42c412404679?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGZhc2hpb24lMjBzZWElMjB0ZWNofGVufDB8fHx8MTY5MjQ0NTg4NHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                        alt="New tech innovation for low cost ocean cleanup">
-                                </a>
-                                <div class="post-info-wrap">
-                                    <div class="tag-list flex">
-                                        <a href="tag/technology/index.html" style="--tag-color:#f18509">Technology</a>
-                                    </div>
-                                    <h2 class="h4 post-title">
-                                        <a href="new-tech-innovation-for-low-cost-ocean-cleanup/index.html">New tech
-                                            innovation for low cost ocean cleanup</a>
-                                    </h2>
-                                    <div class="post-meta text-s flex">
-                                        <div class="author-avatars flex" data-authors="1">
-                                            <a href="author/apurba/index.html" class="author-image-wrap">
-                                                <img src="content/images/2023/08/Apurba.jpg" alt="Apurba Talukdar">
-                                            </a>
-                                        </div>
-                                        <span class="read-time">
-                                            <svg>
-                                                <use xlink:href="#i-clock"></use>
-                                            </svg>2 min read
-                                        </span>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="post-card-coverflow">
-                                <a href="all-the-money-in-the-world-cant-buy-you-back-good-health/index.html"
-                                    class="post-img-wrap">
-                                    <img loading="lazy"
-                                        srcset="https://images.unsplash.com/photo-1670349148055-e11a0b3be242?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wxfDF8c2VhcmNofDI5fHxoYXBweXxlbnwwfHx8fDE2NzE0MzI2NjY&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1670349148055-e11a0b3be242?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wxfDF8c2VhcmNofDI5fHxoYXBweXxlbnwwfHx8fDE2NzE0MzI2NjY&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1670349148055-e11a0b3be242?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wxfDF8c2VhcmNofDI5fHxoYXBweXxlbnwwfHx8fDE2NzE0MzI2NjY&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1670349148055-e11a0b3be242?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;MnwxMTc3M3wxfDF8c2VhcmNofDI5fHxoYXBweXxlbnwwfHx8fDE2NzE0MzI2NjY&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                        sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                        src="https://images.unsplash.com/photo-1670349148055-e11a0b3be242?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wxfDF8c2VhcmNofDI5fHxoYXBweXxlbnwwfHx8fDE2NzE0MzI2NjY&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                                        alt="All the money in the world can&#x27;t buy you back good health">
-                                </a>
-                                <div class="post-info-wrap">
-                                    <div class="tag-list flex">
-                                        <a href="tag/health/index.html" style="--tag-color:#1dbf2f">Health</a>
-                                    </div>
-                                    <h2 class="h4 post-title">
-                                        <a href="all-the-money-in-the-world-cant-buy-you-back-good-health/index.html">All
-                                            the money in the world can&#x27;t buy you back good health</a>
-                                    </h2>
-                                    <div class="post-meta text-s flex">
-                                        <div class="author-avatars flex" data-authors="1">
-                                            <a href="author/biswajit/index.html" class="author-image-wrap">
-                                                <img src="https://www.gravatar.com/avatar/021e64775176cc4c7018e5e867f17de2?s=250&amp;r=x&amp;d=mp"
-                                                    alt="Biswajit Saha">
-                                            </a>
-                                        </div>
-                                        <span class="read-time">
-                                            <svg>
-                                                <use xlink:href="#i-clock"></use>
-                                            </svg>3 min read
-                                        </span>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-            <script src="{{ asset('assets/js/plugin/swiper-bundle.min9e5d.js') }}"></script>
+           
             <div class="popular-tags">
                 <div class="container">
                     <h2 class="section-title">Popular Tags</h2>
@@ -713,7 +313,7 @@
                             </div>
                         </article>
                         <article class="post-card js-card flex ar-4:3">
-                            <a href="never-let-your-memories-be-greater-than-your-dreams/index.html"
+                            <a href="{{route('singlepost')}}"
                                 class="post-img-wrap">
                                 <img loading="lazy"
                                     srcset="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
@@ -734,7 +334,7 @@
                                     <a href="tag/travel/index.html" style="--tag-color:#E10689">Travel</a>
                                 </div>
                                 <h2 class="h4 post-title">
-                                    <a href="never-let-your-memories-be-greater-than-your-dreams/index.html">Never let
+                                    <a href="{{route('singlepost')}}">Never let
                                         your memories be greater than your dreams</a>
                                 </h2>
                                 <div class="post-excerpt">

@@ -18,5 +18,11 @@ class HomeController extends Controller
    public function signIn () {
     return view('auth/signin');
    }
+   public function signUp () {
+    return view('auth/signup');
+   }
+   public function singlepost () {
+    return view('singlepost');
+   }
  
 }
