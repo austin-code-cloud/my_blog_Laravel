@@ -5,27 +5,47 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\BlogPost;
+use Illuminate\Support\Str;
 
-class PostController extends Controller
+class BlogPostController extends Controller
 {
-    public function addnewpost (Request $request) {
+    public function index()
+    {
+        return view('admin/blogPost');
+    }
+    public function Create(Request $request)
+    {
         $request->validate([
             'title' => "required",
             'description' => "required",
-            'body' => "required"
+            'content' => "required"
         ]);
 
         $post = new BlogPost();
 
         $post->title = $request->title;
         $post->description = $request->description;
-        $post->body = $request->body;
-        $res =   $post->save();
+        $post->content = $request->content;
+        $post->slug = str::slug($request->title);
+        $saved =   $post->save();
 
-        if ($res) {
-            return back()->with('success', 'New post added Sucessfully');
+        if ($saved) {
+            return redirect('/')->with('success', 'New post added Sucessfully');
         } else {
             return back()->with('failure', 'Something went wrong');
         }
+    }
+    public function Show()
+    {
+       
+    }
+    public function Store()
+    {
+    }
+    public function Edit()
+    {
+    }
+    public function Delete()
+    {
     }
 }

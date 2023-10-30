@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PanelController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogPostController;
 use App\Http\Controllers\auth\AuthController;
+use App\Http\Controllers\CategoryController;
 
 
 
@@ -20,16 +21,15 @@ Route::get('/signin', [HomeController::class, 'signin'])->name('signin')->middle
 Route::get('/signup', [HomeController::class, 'signup'])->name('signup')->middleware('alreadyLoggedIn');
 Route::get('/singlepost', [HomeController::class, 'singlepost'])->name('singlepost');
 
-// PanelController
+// AdminController
 
-Route::get('/admin', [PanelController::class, 'panel'])->name('/admin')->middleware('isLoggedIn');
-Route::get('/admin/posts', [PanelController::class, 'blogPost'])->name('admin/posts');
-Route::get('/admin/newpost', [PanelController::class, 'newPost'])->name('admin/newpost');
-Route::get('/admin/categories', [PanelController::class, 'categories'])->name('admin/categories');
+Route::get('/admin', [AdminController::class, 'index'])->name('/admin')->middleware('isLoggedIn');
+Route::get('/admin/posts', [BlogPostController::class, 'index'])->name('admin/posts');
+Route::get('/admin/create', [AdminController::class, 'Create'])->name('admin/create');
+Route::get('/admin/categories', [CategoryController::class, 'index'])->name('admin/categories');
 
-//  BlogPostController
+Route::post('/admin/blogpost/create', [BlogPostController::class, 'Create'])->name('admin/blogpost/create');
 
-Route::post('/admin/addnewpost', [BlogPostController::class, 'addnewpost'])->name('admin/addnewpost');
 
 // Auth/AuthController
 

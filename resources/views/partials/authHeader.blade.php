@@ -18,17 +18,15 @@
         as="style" onload="this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="preload stylesheet"
         as="style" onload="this.rel='stylesheet'">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <style>
         :root {
             --font-body: 'Inter', sans-serif;
         }
     </style>
-
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link href="{{ asset('assets/css/plugin/swiper-bundle.min9e5d.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/style.min9e5d.css') }}" rel="stylesheet">
-
     <script defer src="{{ asset('public/cards.min9e5d.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/cards.min9e5d.css') }}">
     <script defer src="{{ asset('public/comment-counts.min9e5d.js') }}"></script>

@@ -438,6 +438,12 @@
         location.reload();
     }
 </script>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"
+    integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM=" crossorigin="anonymous"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+
+@include('partials.modal')
 </body>
 
 </html>

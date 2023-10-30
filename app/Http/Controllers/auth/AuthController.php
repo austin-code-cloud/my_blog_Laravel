@@ -17,13 +17,13 @@ class AuthController extends Controller
             'password' => "required|min:5|max:12"
         ]);
 
-        $user = users::where('email', '=', $request->email)->first();
+        $user = users::where('email', $request->email)->first();
 
         if ($user) {
 
             if (Hash::check($request->password, $user->password)) {
                 $request->Session()->put('loginId', $user->id);
-                return view('admin/panel');
+                return view('admin/dashboard');
             } else {
                 return back()->with('failure', 'Wrong Password inputed');
             }
@@ -48,7 +48,7 @@ class AuthController extends Controller
         $res =   $user->save();
 
         if ($res) {
-            return back()->with('success', 'You have registered Succesfully');
+            return redirect('signin')->with('success', 'You have registered Succesfully. Signin !!');
         } else {
             return back()->with('failure', 'Something went wrong');
         }

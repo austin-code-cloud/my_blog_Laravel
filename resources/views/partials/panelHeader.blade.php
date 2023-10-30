@@ -1,4 +1,3 @@
-
 <html lang="en">
 
 <head>
@@ -18,12 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
+    
+
     <link rel="stylesheet" type="text/css" href="{{ asset('files/bower_components/bootstrap/css/bootstrap.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('files/assets/pages/waves/css/waves.min.css') }}" type="text/css"
         media="all">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/icon/feather/css/feather.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/icon/icofont/css/icofont.css') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/css/font-awesome-n.min.css') }}">
 
@@ -35,8 +37,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/css/widget.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('files/assets/css/pages.css') }}">
-
-
+    
 </head>
 
 <body>
@@ -176,7 +177,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="{{route('admin/logout')}}">
+                                            <a href="{{ route('admin/logout') }}">
                                                 <i class="feather icon-log-out"></i> Logout
                                             </a>
                                         </li>
@@ -333,7 +334,7 @@
                             <div class="pcoded-inner-navbar main-menu">
                                 <div class="pcoded-navigation-label">Navigation</div>
                                 <ul class="pcoded-item pcoded-left-item">
-                                    <li class="pcoded-hasmenu active pcoded-trigger">
+                                    <li class="pcoded-hasmenu">
                                         <a href="javascript:void(0)" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                                             <span class="pcoded-mtext">Dashboard</span>
@@ -349,42 +350,30 @@
                                                     <span class="pcoded-mtext">Categories</span>
                                                 </a>
                                             </li>
-                                            <li class>
-                                                <a href="default/dashboard-analytics.html"
-                                                    class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Analytics</span>
-                                                    <span class="pcoded-badge label label-info ">NEW</span>
-                                                </a>
-                                            </li>
+
                                         </ul>
                                     </li>
                                     <li class="pcoded-hasmenu">
                                         <a href="javascript:void(0)" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
                                             <span class="pcoded-mtext">Blog Management</span>
-                                            <span class="pcoded-badge label label-warning">NEW</span>
+
                                         </a>
                                         <ul class="pcoded-submenu">
-                                            <li class=" pcoded-hasmenu">
-                                                <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Manage</span>
-                                                </a>
-                                                <ul class="pcoded-submenu">
-                                                    <li class>
-                                                        <a href="default/menu-static.html"
-                                                            class="waves-effect waves-dark">
-                                                            <span class="pcoded-mtext">Posts</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class>
-                                                        <a href="{{ route('admin/newpost') }}"
-                                                            class="waves-effect waves-dark">
-                                                            <span class="pcoded-mtext">Add New Post</span>
-                                                        </a>
-                                                    </li>
 
-                                                </ul>
+                                            <li class>
+                                                <a href="default/menu-static.html" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Posts</span>
+                                                </a>
                                             </li>
+                                            <li class>
+                                                <a href="{{ route('admin/create') }}"
+                                                    class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Add New Post</span>
+                                                </a>
+                                            </li>
+
+
 
 
                                         </ul>

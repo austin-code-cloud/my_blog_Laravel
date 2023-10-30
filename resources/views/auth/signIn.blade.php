@@ -18,12 +18,7 @@
             </div>
             <form class="members-form text-left" data-members-form="signin" autocomplete="off"
                 action="{{ route('signin') }}" method="POST">
-                @if (Session::has('success'))
-                    <div>{{ Session::get('success') }}</div>
-                @endif
-                @if (Session::has('failure'))
-                    <div>{{ Session::get('failure') }}</div>
-                @endif
+                
                 @csrf
                 <div class="members-form-box">
                     <div class="form-field-wrap">

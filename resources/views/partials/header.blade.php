@@ -18,13 +18,13 @@
         as="style" onload="this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="preload stylesheet"
         as="style" onload="this.rel='stylesheet'">
-    
+
     <style>
         :root {
             --font-body: 'Inter', sans-serif;
         }
     </style>
-
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link href="{{ asset('assets/css/plugin/swiper-bundle.min9e5d.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/style.min9e5d.css') }}" rel="stylesheet">
 
