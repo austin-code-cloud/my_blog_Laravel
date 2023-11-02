@@ -10,6 +10,14 @@ use App\Models\Users;
 
 class AuthController extends Controller
 {
+    public function login()
+    {
+        return view('auth/signin');
+    }
+    public function register()
+    {
+        return view('auth/signup');
+    }
     public function signin(Request $request)
     {
         $request->validate([

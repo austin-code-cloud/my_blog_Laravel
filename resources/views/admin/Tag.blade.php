@@ -1,6 +1,5 @@
 @include('partials.panelHeader')
 
-
 <div class="pcoded-content">
 
     <div class="page-header card">
@@ -21,7 +20,7 @@
                             <a href="../index.html"><i class="feather icon-home"></i></a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="#!">Add New Category</a>
+                            <a href="#!">Add New Tag</a>
                         </li>
                     </ul>
                 </div>
@@ -33,13 +32,13 @@
         <div class="main-body">
             <div class="page-wrapper">
                 <div class="page-body">
-                    <form action="{{ route('admin/category/createcategory') }}" method="post">
+                    <form action="{{ route('admin/tag/createtag') }}" method="post">
                         @csrf
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5>Add New Category</h5>
+                                        <h5>Add New Tag</h5>
                                         <div class="card-header-right">
                                             <ul class="list-unstyled card-option">
                                                 <li class="first-opt"><i
@@ -75,7 +74,7 @@
                             <div class="col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5>Category Details</h5>
+                                        <h5>Tag Details</h5>
                                         <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code>
                                             tag</span>
                                     </div>
@@ -87,7 +86,7 @@
                                                 <fieldset>
                                                     <div class="form-group row">
                                                         <div class="col-sm-12">
-                                                            <label for="userName-2" class="block">Category Name
+                                                            <label for="userName-2" class="block">Tag Name
                                                             </label>
                                                         </div>
                                                         <div class="col-sm-12">
@@ -118,7 +117,7 @@
                         <div class="col text-center">
 
                             <button class="btn waves-effect waves-light btn-success"><i
-                                    class="icofont icofont-check-circled"></i>Create Category</button>
+                                    class="icofont icofont-check-circled"></i>Create Tag</button>
                     </form>
                 </div>
             </div>

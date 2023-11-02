@@ -17,6 +17,9 @@ return new class extends Migration
             $table->text('description');
             $table->text('content');
             $table->string('slug');
+            $table->string('user_id');
+            $table->string('category_id');
+            $table->string('tag_id');
             $table->timestamps();
         
         });

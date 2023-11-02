@@ -8,12 +8,9 @@
                     <div class="tag-list flex">
                         <a href="../tag/food/index.html" style="--tag-color:#B43ADF">Food</a>
                     </div>
-                    <h1 class="post-title">I do not stick to rules when cooking. I rely on my imagination</h1>
+                    <h1 class="post-title">{{ $BlogPost->title }}</h1>
                     <div class="post-excerpt">
-                        I walked down to the station with them, and then wandered through the streets of the little
-                        town, finally returning to the hotel, where I lay upon the sofa and tried to interest myself in
-                        a yellow-backed novel. The puny plot of the story was so thin, however, when compared to the
-                        deep mystery
+                        {{ $BlogPost->description }}
                     </div>
                     <div class="post-meta flex align-center">
                         <div class="author-avatars flex" data-authors="1">
@@ -55,7 +52,7 @@
             </div>
             <div class="post-content-area flex ">
                 <div class="post-content">
-                    
+                    {!! $BlogPost->content !!}
             </div>
         </article>
         <div class="post-footer flex">

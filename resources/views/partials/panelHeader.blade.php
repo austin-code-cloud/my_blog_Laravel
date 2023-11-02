@@ -54,7 +54,7 @@
                 <div class="navbar-wrapper">
                     <div class="navbar-logo">
                         <a href="index.html">
-                            <img class="img-fluid" src="files/assets/images/logo.png" alt="Theme-Logo" />
+                            <img class="img-fluid" src="{{asset('files/assets/images/logo.png')}}" alt="Theme-Logo" />
                         </a>
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
                             <i class="feather icon-menu icon-toggle-right"></i>
@@ -100,7 +100,7 @@
                                         </li>
                                         <li>
                                             <div class="media">
-                                                <img class="img-radius" src="files/assets/images/avatar-4.jpg"
+                                                <img class="img-radius" src="{{asset('files/assets/images/avatar-4.jpg')}}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">John Doe</h5>
@@ -113,7 +113,7 @@
                                         </li>
                                         <li>
                                             <div class="media">
-                                                <img class="img-radius" src="files/assets/images/avatar-3.jpg"
+                                                <img class="img-radius" src="{{asset('files/assets/images/avatar-3.jpg')}}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">Joseph William</h5>
@@ -125,7 +125,7 @@
                                         </li>
                                         <li>
                                             <div class="media">
-                                                <img class="img-radius" src="files/assets/images/avatar-4.jpg"
+                                                <img class="img-radius" src="{{asset('files/assets/images/avatar-4.jpg')}}"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">Sara Soudein</h5>
@@ -149,7 +149,7 @@
                             <li class="user-profile header-notification">
                                 <div class="dropdown-primary dropdown">
                                     <div class="dropdown-toggle" data-toggle="dropdown">
-                                        <img src="files/assets/images/avatar-4.jpg" class="img-radius"
+                                        <img src="{{asset('files/assets/images/avatar-4.jpg')}}" class="img-radius"
                                             alt="User-Profile-Image">
                                         <span>John Doe</span>
                                         <i class="feather icon-chevron-down"></i>
@@ -212,7 +212,7 @@
                                     data-status="online" data-username="Josephin Doe">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-radius img-radius"
-                                            src="files/assets/images/avatar-3.jpg" alt="Generic placeholder image ">
+                                            src="{{asset('files/assets/images/avatar-3.jpg')}}" alt="Generic placeholder image ">
                                         <div class="live-status bg-success"></div>
                                     </a>
                                     <div class="media-body">
@@ -222,7 +222,7 @@
                                 <div class="media userlist-box waves-effect waves-light" data-id="2"
                                     data-status="online" data-username="Lary Doe">
                                     <a class="media-left" href="#!">
-                                        <img class="media-object img-radius" src="files/assets/images/avatar-2.jpg"
+                                        <img class="media-object img-radius" src="{{asset('files/assets/images/avatar-2.jpg')}}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-success"></div>
                                     </a>
@@ -233,7 +233,7 @@
                                 <div class="media userlist-box waves-effect waves-light" data-id="3"
                                     data-status="online" data-username="Alice">
                                     <a class="media-left" href="#!">
-                                        <img class="media-object img-radius" src="files/assets/images/avatar-4.jpg"
+                                        <img class="media-object img-radius" src="{{asset('files/assets/images/avatar-4.jpg')}}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-success"></div>
                                     </a>
@@ -244,7 +244,7 @@
                                 <div class="media userlist-box waves-effect waves-light" data-id="4"
                                     data-status="offline" data-username="Alia">
                                     <a class="media-left" href="#!">
-                                        <img class="media-object img-radius" src="files/assets/images/avatar-3.jpg"
+                                        <img class="media-object img-radius" src="{{asset('files/assets/images/avatar-3.jpg')}}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-default"></div>
                                     </a>
@@ -256,7 +256,7 @@
                                 <div class="media userlist-box waves-effect waves-light" data-id="5"
                                     data-status="offline" data-username="Suzen">
                                     <a class="media-left" href="#!">
-                                        <img class="media-object img-radius" src="files/assets/images/avatar-2.jpg"
+                                        <img class="media-object img-radius" src="{{asset('files/assets/images/avatar-2.jpg')}}"
                                             alt="Generic placeholder image">
                                         <div class="live-status bg-default"></div>
                                     </a>
@@ -282,7 +282,7 @@
                     <div class="media chat-messages">
                         <a class="media-left photo-table" href="#!">
                             <img class="media-object img-radius img-radius m-t-5"
-                                src="files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                src="{{asset('files/assets/images/avatar-2.jpg')}}" alt="Generic placeholder image">
                         </a>
                         <div class="media-body chat-menu-content">
                             <div class>
@@ -303,7 +303,7 @@
                     <div class="media chat-messages">
                         <a class="media-left photo-table" href="#!">
                             <img class="media-object img-radius img-radius m-t-5"
-                                src="files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                src="{{asset('files/assets/images/avatar-2.jpg')}}" alt="Generic placeholder image">
                         </a>
                         <div class="media-body chat-menu-content">
                             <div class>
@@ -341,13 +341,8 @@
                                         </a>
                                         <ul class="pcoded-submenu">
                                             <li class="active">
-                                                <a href="index.html" class="waves-effect waves-dark">
+                                                <a href="{{ route('admin/posts') }}" class="waves-effect waves-dark">
                                                     <span class="pcoded-mtext">Posts</span>
-                                                </a>
-                                            </li>
-                                            <li class>
-                                                <a href="default/dashboard-crm.html" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Categories</span>
                                                 </a>
                                             </li>
 
@@ -360,16 +355,22 @@
 
                                         </a>
                                         <ul class="pcoded-submenu">
-
                                             <li class>
-                                                <a href="default/menu-static.html" class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Posts</span>
+                                                <a href="{{ route('admin/createpost') }}"
+                                                    class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Add New Post</span>
                                                 </a>
                                             </li>
                                             <li class>
-                                                <a href="{{ route('admin/create') }}"
+                                                <a href="{{ route('admin/createcategory') }}"
                                                     class="waves-effect waves-dark">
-                                                    <span class="pcoded-mtext">Add New Post</span>
+                                                    <span class="pcoded-mtext">Add New Category</span>
+                                                </a>
+                                            </li>
+                                            <li class>
+                                                <a href="{{ route('admin/createtag') }}"
+                                                    class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Add New Tag</span>
                                                 </a>
                                             </li>
 

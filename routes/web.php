@@ -6,34 +6,34 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogPostController;
 use App\Http\Controllers\auth\AuthController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TagController;
+use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SinglePostController;
 
 
+// Home
 
-Route::get('/', function () {
-    return view('welcome'); 
-});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/tags', [TagController::class, 'index'])->name('tags');
+Route::get('/authors', [AuthorController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index']);
+Route::get('/signin', [AuthController::class, 'login'])->name('signin')->middleware('alreadyLoggedIn');
+Route::get('/signup', [AuthController::class, 'register'])->name('signup')->middleware('alreadyLoggedIn');
+Route::get('/singlepost/{slug}', [SinglePostController::class, 'singlepost'])->name('singlepost');
 
-// HomeController
-Route::get('/tags', [HomeController::class, 'tags']);
-Route::get('/authors', [HomeController::class, 'authors']);
-Route::get('/contact', [HomeController::class, 'contact']);
-Route::get('/signin', [HomeController::class, 'signin'])->name('signin')->middleware('alreadyLoggedIn');
-Route::get('/signup', [HomeController::class, 'signup'])->name('signup')->middleware('alreadyLoggedIn');
-Route::get('/singlepost', [HomeController::class, 'singlepost'])->name('singlepost');
+Route::post('/signin', [AuthController::class, 'signin'])->name('signin');
+Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
 
 // AdminController
 
 Route::get('/admin', [AdminController::class, 'index'])->name('/admin')->middleware('isLoggedIn');
-Route::get('/admin/posts', [BlogPostController::class, 'index'])->name('admin/posts');
-Route::get('/admin/create', [AdminController::class, 'Create'])->name('admin/create');
-Route::get('/admin/categories', [CategoryController::class, 'index'])->name('admin/categories');
-
-Route::post('/admin/blogpost/create', [BlogPostController::class, 'Create'])->name('admin/blogpost/create');
-
-
-// Auth/AuthController
-
+Route::get('/admin/posts', [AdminController::class, 'Post'])->name('admin/posts');
+Route::get('/admin/createpost', [AdminController::class, 'CreatePost'])->name('admin/createpost');
+Route::get('/admin/createcategory', [AdminController::class, 'CreateCategory'])->name('admin/createcategory');
+Route::get('/admin/createtag', [AdminController::class, 'CreateTag'])->name('admin/createtag');
 Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin/logout');
 
-Route::post('/signin', [AuthController::class, 'signin'])->name('signin');
-Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
+Route::post('/admin/blogpost/createpost', [BlogPostController::class, 'CreatePost'])->name('admin/blogpost/createpost');
+Route::post('/admin/category/createcategory', [CategoryController::class, 'CreateCategory'])->name('admin/category/createcategory');
+Route::post('/admin/tag/createtag', [TagController::class, 'createTag'])->name('admin/tag/createtag');

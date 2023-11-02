@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Porto</title>
-
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="preload" as="style" href="{{ asset('assets/css/style.min9e5d.css') }}">
     <link rel="preload" as="script" href="{{ asset('assets/js/app.bundle.min9e5d.js') }}">
 
@@ -24,7 +24,7 @@
             --font-body: 'Inter', sans-serif;
         }
     </style>
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    
     <link href="{{ asset('assets/css/plugin/swiper-bundle.min9e5d.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/style.min9e5d.css') }}" rel="stylesheet">
 

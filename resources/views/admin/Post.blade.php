@@ -32,7 +32,7 @@
         <div class="main-body">
             <div class="page-wrapper">
                 <div class="page-body">
-                    <form action="{{ route('admin/blogpost/create') }}" method="post">
+                    <form action="{{ route('admin/blogpost/createpost') }}" method="post">
                         @csrf
                         <div class="row">
                             <div class="col-sm-12">
@@ -124,7 +124,25 @@
 
                                                     </div>
                                                     <br>
+                                                    <div class="form-group row">
 
+                                                        <div class="col-sm-12">
+                                                            <h4 class="sub-title">Select Post Tag</h4>
+                                                            <select name="tag"
+                                                                class="form-control form-control-primary">
+                                                                <option value="tag1">Select
+                                                                </option>
+                                                                <option value="tag2">Tag 2</option>
+                                                                <option value="tag3">Tag 3</option>
+                                                                <option value="tag4">Tag 4</option>
+                                                                <option value="tag5">Tag 5</option>
+                                                                <option value="tag6">Tag 6</option>
+                                                                <option value="tag7">Tag 7</option>
+                                                                <option value="tag8">Tag 8</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
                                                 </fieldset>
 
                                             </div>
@@ -234,15 +252,5 @@
         </div>
     </div>
 </div>
-
-</div>
-
-<div id="styleSelector">
-</div>
-</div>
-</div>
-</div>
-</div>
-
 
 @include('partials.panelFooter')

@@ -8,27 +8,26 @@ class AdminController extends Controller
 {
     public function index()
     {
-        return view('admin/dashboard');
+        return view('admin/Dashboard');
     }
-    public function Create()
+
+    public function Post()
     {
-        return view('admin/CreatePost');
+        return view('admin/BlogPost');
     }
-    public function Store()
+   
+    public function CreatePost()
     {
-       
+        return view('admin/Post');
     }
-    public function Show()
+    public function CreateCategory()
     {
-        
+        return view('admin/Categories');
     }
-    public function Edit()
+    public function CreateTag()
     {
-        
+        return view('admin/Tag');  
     }
-    public function Delete()
-    {
-       
-    }
+   
     
 }

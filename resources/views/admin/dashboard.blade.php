@@ -229,12 +229,5 @@
     </div>
 </div>
 
-<div id="styleSelector">
-</div>
-
-</div>
-</div>
-</div>
-</div>
 
 @include('partials.panelFooter')

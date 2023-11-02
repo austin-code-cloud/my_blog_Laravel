@@ -2,27 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BlogPost;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-   public function tags () {
-    return view('tags');
+   public function index()
+   {
+      $latestPost = BlogPost::latest()->get();
+      $oldestPost = BlogPost::oldest()->take(4)->get();
+
+      return view('welcome', compact('latestPost', 'oldestPost'));
    }
-   public function authors () {
-    return view('authors');
-   }
-   public function contact () {
-    return view('contact');
-   }
-   public function signIn () {
-    return view('auth/signin');
-   }
-   public function signUp () {
-    return view('auth/signup');
-   }
-   public function singlepost () {
-    return view('singlepost');
-   }
- 
+  
 }
