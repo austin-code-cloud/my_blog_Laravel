@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Tags;
+use App\Models\Categories;
 
 class AdminController extends Controller
 {
@@ -13,12 +15,16 @@ class AdminController extends Controller
 
     public function Post()
     {
+
         return view('admin/BlogPost');
     }
-   
+
     public function CreatePost()
     {
-        return view('admin/Post');
+        $Tag = Tags::get();
+        $Category = Categories::get();
+        
+        return view('admin/Post', compact('Tag', 'Category'));
     }
     public function CreateCategory()
     {
@@ -26,8 +32,7 @@ class AdminController extends Controller
     }
     public function CreateTag()
     {
-        return view('admin/Tag');  
+
+        return view('admin/Tag',);
     }
-   
-    
 }

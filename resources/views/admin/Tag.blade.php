@@ -90,7 +90,7 @@
                                                             </label>
                                                         </div>
                                                         <div class="col-sm-12">
-                                                            <input id="userName-2a" name="category_name" type="text"
+                                                            <input id="userName-2a" name="tag_name" type="text"
                                                                 class=" form-control">
                                                         </div>
                                                     </div>

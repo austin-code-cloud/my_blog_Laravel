@@ -112,13 +112,9 @@
                                                                 class="form-control form-control-primary">
                                                                 <option value="opt1">Select
                                                                 </option>
-                                                                <option value="opt2">Type 2</option>
-                                                                <option value="opt3">Type 3</option>
-                                                                <option value="opt4">Type 4</option>
-                                                                <option value="opt5">Type 5</option>
-                                                                <option value="opt6">Type 6</option>
-                                                                <option value="opt7">Type 7</option>
-                                                                <option value="opt8">Type 8</option>
+                                                                @foreach ($Category as $Category)
+                                                                <option value="{{$Category->id}}">{{$Category->name}}</option>
+                                                                @endforeach
                                                             </select>
                                                         </div>
 
@@ -132,13 +128,12 @@
                                                                 class="form-control form-control-primary">
                                                                 <option value="tag1">Select
                                                                 </option>
-                                                                <option value="tag2">Tag 2</option>
-                                                                <option value="tag3">Tag 3</option>
-                                                                <option value="tag4">Tag 4</option>
-                                                                <option value="tag5">Tag 5</option>
-                                                                <option value="tag6">Tag 6</option>
-                                                                <option value="tag7">Tag 7</option>
-                                                                <option value="tag8">Tag 8</option>
+
+                                                                @foreach ($Tag as $Tag)
+                                                                <option value="{{$Tag->id}}">{{$Tag->name}}</option>
+                                                                @endforeach
+
+
                                                             </select>
                                                         </div>
 

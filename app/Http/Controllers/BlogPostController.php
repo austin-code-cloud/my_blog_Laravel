@@ -42,10 +42,6 @@ class BlogPostController extends Controller
 
        
     }
-    public function CreateCategory()
-    {
-
-    }
     public function Store()
     {
     }

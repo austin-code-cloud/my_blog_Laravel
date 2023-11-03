@@ -24,5 +24,4 @@ class BlogPost extends Model
         return $this->HasMany(Comments::class);
     }
 
-
 }
