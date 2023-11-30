@@ -20,7 +20,10 @@ Route::get('/authors', [AuthorController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
 Route::get('/signin', [AuthController::class, 'login'])->name('signin')->middleware('alreadyLoggedIn');
 Route::get('/signup', [AuthController::class, 'register'])->name('signup')->middleware('alreadyLoggedIn');
-Route::get('/singlepost/{slug}', [SinglePostController::class, 'singlepost'])->name('singlepost');
+Route::get('/singlepost/{slug}', [BlogPostController::class, 'singlepost'])->name('singlepost');
+Route::get('/tag/{tag}', [TagController::class, 'showTag'])->name('tag');
+
+
 
 Route::post('/signin', [AuthController::class, 'signin'])->name('signin');
 Route::post('/signup', [AuthController::class, 'signup'])->name('signup');

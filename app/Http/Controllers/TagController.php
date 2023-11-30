@@ -9,7 +9,8 @@ class TagController extends Controller
 {
    public function index()
    {
-      return view('tags');
+      $Tag = Tags::get();
+      return view('tags', compact('Tag'));
    }
 
    public function CreateTag(Request $request)
@@ -34,8 +35,9 @@ class TagController extends Controller
       }
    }
 
-   public function ShowTag()
+   public function showTag($tag)
    {
-      
+      $Tag = Tags::where('name', $tag)->get()->first();
+      return view('singletag', compact('Tag'));
    }
 }

@@ -33,26 +33,20 @@
             <div class="row">
                 <div class="col-lg-7 post-large-wrap">
                     <article class="post-card js-card flex post-card-large">
-                        <a href="{{ route('singlepost', $latestPost[0]['slug']) }}" class="post-img-wrap">
-                            <img loading="lazy"
-                                srcset="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                    https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
+                        <a href="{{ route('singlepost', $latestPost['slug']) }}" class="post-img-wrap">
+                            <img src="{{ asset('storage/' . $latestPost['image']) }}"
                                 alt="Never let your memories be greater than your dreams">
                         </a>
 
                         <div class="post-info-wrap">
                             <div class="tag-list flex">
-                                <a href="tag/travel/index.html" style="--tag-color:#E10689">Travel</a>
+                                <a href="tag/travel/index.html" style="--tag-color:#E10689">{{ $tagNameLatest['name'] }}</a>
                             </div>
                             <h2 class="h4 post-title">
-                                <a href="{{ route('singlepost', $latestPost[0]['slug']) }}">{!! $latestPost[0]['title'] !!}</a>
+                                <a href="{{ route('singlepost', $latestPost['slug']) }}">{!! $latestPost['title'] !!}</a>
                             </h2>
                             <div class="post-excerpt">
-                                {!! $latestPost[0]['description'] !!}
+                                {!! $latestPost['description'] !!}
                             </div>
                             <div class="post-meta text-s flex">
                                 <div class="author-avatars flex" data-authors="2">
@@ -79,18 +73,12 @@
                         @foreach ($oldestPost as $oldestPost)
                             <article class="post-card js-card flex post-card-small">
                                 <a href="{{ route('singlepost', $oldestPost['slug']) }}" class="post-img-wrap">
-                                    <img loading="lazy"
-                                        srcset="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
-                                        https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
-                                         https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w, 
-                                        https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1000w"
-                                        sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 400px"
-                                        src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDIzfHxmYXNoaW9uJTIwJTIwZmxvd2VyJTIwbGlmZXN0eWxlfGVufDB8fHx8MTY5MjQ0NTI1N3ww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
+                                    <img src="{{ asset('storage/' . $oldestPost['image']) }}"
                                         alt="Self-observation is the first step of inner unfolding">
                                 </a>
                                 <div class="post-info-wrap">
                                     <div class="tag-list flex">
-                                        <a href="tag/lifestyle/index.html" style="--tag-color:#4d61ff">Lifestyle</a>
+                                        <a href="tag/lifestyle/index.html" style="--tag-color:#4d61ff"> {{$oldestPost->tag->name}} </a>
                                     </div>
                                     <h2 class="h4 post-title">
                                         <a
@@ -116,7 +104,7 @@
                             loading="lazy" alt="Inspiration">
                     </div>
                     <div class="tag-info">
-                        <a href="{{route('tags')}}" class="tag-name">Inspiration</a>
+                        <a href="{{ route('tags') }}" class="tag-name">Inspiration</a>
                         <div class="post-count">7 posts</div>
                     </div>
                 </div>
@@ -181,7 +169,7 @@
                     </div>
                 </div>
                 <div class="all-tags flex">
-                    <a href="{{route('tags')}}" class="all-tags-link"><span>See all tags</span><svg
+                    <a href="{{ route('tags') }}" class="all-tags-link"><span>See all tags</span><svg
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
                                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
@@ -194,11 +182,9 @@
 
     <div class="post-loop">
         <div class="container">
-            <div class="post-cards-wrap
-        three-column-vertical
-">
+            <div class="post-cards-wrap three-column-vertical">
                 <article class="post-card js-card flex ar-4:3">
-                    <a href="{{ route('singlepost', $latestPost[0]['slug']) }}">
+                    <a href="{{ route('singlepost', $latestPost['slug']) }}">
                         <img loading="lazy"
                             srcset="https://images.unsplash.com/photo-1582657233895-0f37a3f150c0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI2fHxmYXNoaW9uJTIwJTIwZmxvd2VyfGVufDB8fHx8MTY5MjQ0NTE5Mnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
                                 https://images.unsplash.com/photo-1582657233895-0f37a3f150c0?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI2fHxmYXNoaW9uJTIwJTIwZmxvd2VyfGVufDB8fHx8MTY5MjQ0NTE5Mnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
@@ -237,7 +223,7 @@
                     </div>
                 </article>
                 <article class="post-card js-card flex ar-4:3">
-                    <a href="{{ route('singlepost', $latestPost[0]['slug']) }}" class="post-img-wrap">
+                    <a href="{{ route('singlepost', $latestPost['slug']) }}" class="post-img-wrap">
                         <img loading="lazy"
                             srcset="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 250w,
                                 https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxmYXNoaW9uJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NTA2MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 400w,
@@ -257,7 +243,7 @@
                             <a href="tag/travel/index.html" style="--tag-color:#E10689">Travel</a>
                         </div>
                         <h2 class="h4 post-title">
-                            <a href="{{ route('singlepost', $latestPost[0]['slug']) }}">Never let
+                            <a href="{{ route('singlepost', $latestPost['slug']) }}">Never let
                                 your memories be greater than your dreams</a>
                         </h2>
                         <div class="post-excerpt">

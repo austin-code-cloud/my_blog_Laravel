@@ -32,7 +32,7 @@
         <div class="main-body">
             <div class="page-wrapper">
                 <div class="page-body">
-                    <form action="{{ route('admin/blogpost/createpost') }}" method="post">
+                    <form action="{{ route('admin/blogpost/createpost') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-sm-12">
@@ -167,14 +167,14 @@
                                     <div class="card-block">
                                         <div class="form-group row">
                                             <div class="col-sm-12">
-                                                <label for="" class="block">Select Cover image
+                                                <label for="image" class="block">Select Cover image
                                                 </label>
                                             </div>
                                             <div class="col-sm-8 col-lg-6">
                                                 <div class="card-block">
 
                                                     <div class="fallback dropzone">
-                                                        <input name="file" type="file" multiple />
+                                                        <input name="image" type="file" />
                                                     </div>
 
                                                 </div>

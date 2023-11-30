@@ -19,6 +19,10 @@ class BlogPost extends Model
     {
         return $this->belongsTo(Categories::class);
     }
+    public function tag (): BelongsTo
+    {
+        return $this->belongsTo(tags::class);
+    }
     public function comments (): HasMany
     {
         return $this->HasMany(Comments::class);

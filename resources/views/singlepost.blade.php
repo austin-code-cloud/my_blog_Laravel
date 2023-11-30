@@ -36,13 +36,7 @@
                     </div>
                 </div>
                 <figure class="single-post-img-container">
-                    <img loading="lazy"
-                        srcset="https://images.unsplash.com/photo-1522512115668-c09775d6f424?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDUyfHxmYXNoaW9uJTIwJTIwbGlnaHR8ZW58MHx8fHwxNjkyNDQ1NDA4fDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 300w,
-                        https://images.unsplash.com/photo-1522512115668-c09775d6f424?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDUyfHxmYXNoaW9uJTIwJTIwbGlnaHR8ZW58MHx8fHwxNjkyNDQ1NDA4fDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 600w,
-                        https://images.unsplash.com/photo-1522512115668-c09775d6f424?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;webp&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDUyfHxmYXNoaW9uJTIwJTIwbGlnaHR8ZW58MHx8fHwxNjkyNDQ1NDA4fDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 1200w"
-                        sizes="(max-width: 472px) 400px, (max-width: 767px) 600px, (min-width: 768px) 1200px"
-                        src="https://images.unsplash.com/photo-1522512115668-c09775d6f424?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=webp&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUyfHxmYXNoaW9uJTIwJTIwbGlnaHR8ZW58MHx8fHwxNjkyNDQ1NDA4fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                        alt="I do not stick to rules when cooking. I rely on my imagination">
+                    <img src="{{ asset('storage/' . $BlogPost->image) }}" alt="I do not stick to rules when cooking. I rely on my imagination">
                     <figcaption>Photo by <a
                             href="https://unsplash.com/@calvinvisuals?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">Calvin
                             Lupiya</a> / <a

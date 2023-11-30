@@ -18,29 +18,36 @@ class BlogPostController extends Controller
             'title' => "required",
             'description' => "required",
             'content' => "required",
-            'category' => "required"
+            'category' => "required",
+            'image' => "image"
         ]);
 
         $post = new BlogPost();
+
+        $imagePath = $request->file('image')->store();
 
         $post->title = $request->title;
         $post->description = $request->description;
         $post->content = $request->content;
         $post->slug = str::slug($request->title);
+        $post->image = $imagePath;
         $post->user_id = Session::get('loginId');
         $post->category_id = $request->category;
         $post->tag_id = $request->tag;
         $saved =   $post->save();
 
-        
+
 
         if ($saved) {
             return redirect('/')->with('success', 'New post added Sucessfully');
         } else {
             return back()->with('failure', 'Something went wrong');
         }
-
-       
+    }
+    public function singlepost($slug)
+    {
+        $BlogPost = BlogPost::where('slug', $slug)->get()->first();
+        return view('singlepost', compact('BlogPost'));
     }
     public function Store()
     {
