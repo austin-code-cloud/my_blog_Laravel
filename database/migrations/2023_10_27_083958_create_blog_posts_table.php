@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('user_id');
             $table->string('category_id');
-            $table->string('tag_id');
+            $table->string('tags_id');
             $table->timestamps();
         
         });

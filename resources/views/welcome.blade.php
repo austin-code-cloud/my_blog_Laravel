@@ -40,7 +40,7 @@
 
                         <div class="post-info-wrap">
                             <div class="tag-list flex">
-                                <a href="tag/travel/index.html" style="--tag-color:#E10689">{{ $tagNameLatest['name'] }}</a>
+                                <a href="tag/travel/index.html" style="--tag-color:#E10689"> {{$latestPost->tags->name}}</a>
                             </div>
                             <h2 class="h4 post-title">
                                 <a href="{{ route('singlepost', $latestPost['slug']) }}">{!! $latestPost['title'] !!}</a>
@@ -78,7 +78,7 @@
                                 </a>
                                 <div class="post-info-wrap">
                                     <div class="tag-list flex">
-                                        <a href="tag/lifestyle/index.html" style="--tag-color:#4d61ff"> {{$oldestPost->tag->name}} </a>
+                                        <a href="tag/lifestyle/index.html" style="--tag-color:#4d61ff"> {{$oldestPost->tags->name}}  </a>
                                     </div>
                                     <h2 class="h4 post-title">
                                         <a
@@ -98,76 +98,21 @@
         <div class="container">
             <h2 class="section-title">Popular Tags</h2>
             <div class="popular-tags-wrap flex">
+
+                @foreach ($tags as $tags)
                 <div class="tag-item flex">
                     <div class="tag-image">
                         <img src="https://images.unsplash.com/photo-1526566762798-8fac9c07aa98?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=webp&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEyfHxsaWZlc3R5bGV8ZW58MHx8fHwxNjkyMzYzMzYwfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
                             loading="lazy" alt="Inspiration">
                     </div>
                     <div class="tag-info">
-                        <a href="{{ route('tags') }}" class="tag-name">Inspiration</a>
-                        <div class="post-count">7 posts</div>
+                        <a href="{{ route('tags') }}" class="tag-name">{{$tags->name}}</a>
+                        <div class="post-count">{{$tags->BlogPost->count()}}</div>
                     </div>
                 </div>
-                <div class="tag-item flex">
-                    <div class="tag-image">
-                        <img src="https://images.unsplash.com/photo-1496571330383-9b977f4a021d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=webp&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM3fHxuYXR1cmUlMjBmbG93ZXJ8ZW58MHx8fHwxNjkyNDQ2NDMxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                            loading="lazy" alt="Nature">
-                    </div>
-                    <div class="tag-info">
-                        <a href="tag/nature/index.html" class="tag-name">Nature</a>
-                        <div class="post-count">6 posts</div>
-                    </div>
-                </div>
-                <div class="tag-item flex">
-                    <div class="tag-image">
-                        <img src="https://images.unsplash.com/photo-1608110417822-1d586b76de1a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=webp&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE1MHx8bGlmZXN0eWxlJTIwYmVhdXR5fGVufDB8fHx8MTY5MjQ0NjU0MHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                            loading="lazy" alt="Lifestyle">
-                    </div>
-                    <div class="tag-info">
-                        <a href="tag/lifestyle/index.html" class="tag-name">Lifestyle</a>
-                        <div class="post-count">6 posts</div>
-                    </div>
-                </div>
-                <div class="tag-item flex">
-                    <div class="tag-image">
-                        <img src="https://images.unsplash.com/photo-1453487021979-5b739b2849f4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=webp&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fGxpZmVzdHlsZSUyMGhlYWx0aHxlbnwwfHx8fDE2OTI0NDY2NjZ8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                            loading="lazy" alt="Health">
-                    </div>
-                    <div class="tag-info">
-                        <a href="tag/health/index.html" class="tag-name">Health</a>
-                        <div class="post-count">5 posts</div>
-                    </div>
-                </div>
-                <div class="tag-item flex">
-                    <div class="tag-image">
-                        <img src="https://images.unsplash.com/photo-1526857240824-92be52581d9b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=webp&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGZhc2hpb24lMjB0cmF2ZWx8ZW58MHx8fHwxNjkyNDQ2MjIzfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                            loading="lazy" alt="Travel">
-                    </div>
-                    <div class="tag-info">
-                        <a href="tag/travel/index.html" class="tag-name">Travel</a>
-                        <div class="post-count">5 posts</div>
-                    </div>
-                </div>
-                <div class="tag-item flex">
-                    <div class="tag-image">
-                        <img src="https://images.unsplash.com/photo-1528216142275-f64d7a59d8d5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=webp&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ1fHxsaWZlc3R5bGUlMjBmb29kfGVufDB8fHx8MTY5MjQ0NjcwOXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                            loading="lazy" alt="Food">
-                    </div>
-                    <div class="tag-info">
-                        <a href="tag/food/index.html" class="tag-name">Food</a>
-                        <div class="post-count">5 posts</div>
-                    </div>
-                </div>
-                <div class="tag-item flex">
-                    <div class="tag-image">
-                        <img src="https://images.unsplash.com/photo-1522682178063-73ad4736e440?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=webp&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fGZhc2hpb24lMjB0ZWNobm9sb2d5JTIwY2FtZXJhfGVufDB8fHx8MTY5MjQ0NjMwOXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                            loading="lazy" alt="Technology">
-                    </div>
-                    <div class="tag-info">
-                        <a href="tag/technology/index.html" class="tag-name">Technology</a>
-                        <div class="post-count">3 posts</div>
-                    </div>
-                </div>
+                @endforeach
+                
+                
                 <div class="all-tags flex">
                     <a href="{{ route('tags') }}" class="all-tags-link"><span>See all tags</span><svg
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

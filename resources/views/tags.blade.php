@@ -20,7 +20,7 @@
                         </a>
                         <div class="tag-info-wrap">
                             <h2 class="tag-name h4"><a href="{{route('tag', $Tag->name)}}">{{$Tag->name}}</a></h2>
-                            <div class="post-count">7 posts</div>
+                            <div class="post-count">{{$Tag->BlogPost->count()}}</div>
                         </div>
                     </div>
                 </div>

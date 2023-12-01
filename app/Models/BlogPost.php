@@ -19,7 +19,7 @@ class BlogPost extends Model
     {
         return $this->belongsTo(Categories::class);
     }
-    public function tag (): BelongsTo
+    public function tags (): BelongsTo
     {
         return $this->belongsTo(tags::class);
     }

@@ -33,7 +33,7 @@ class BlogPostController extends Controller
         $post->image = $imagePath;
         $post->user_id = Session::get('loginId');
         $post->category_id = $request->category;
-        $post->tag_id = $request->tag;
+        $post->tags_id = $request->tag;
         $saved =   $post->save();
 
 

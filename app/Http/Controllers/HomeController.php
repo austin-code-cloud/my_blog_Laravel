@@ -15,11 +15,11 @@ class HomeController extends Controller
    public function index()
    {
       $latestPost = BlogPost::latest()->first();
-      $tagNameLatest = Tags::where('id', $latestPost['tag_id'])->first();
+      $tags= Tags::get();
 
       $oldestPost = BlogPost::oldest()->take(4)->get();
       
-      return view('welcome', compact('latestPost', 'oldestPost', 'tagNameLatest'));
+      return view('welcome', compact('latestPost', 'oldestPost', 'tags'));
    }
   
 }
